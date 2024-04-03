@@ -1,0 +1,48 @@
+{% extends "userbase.html" %}
+    {% block header %}{% endblock %}
+    {% block content %}
+    
+    <p>Welcome, {{session.email}}</p>
+
+    <div class="card">
+        <div class="card-header">
+          Generate Password
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Generate a new 16 digit password consisting of uppercase, lowercase,
+             digits and special characters.
+          </p>
+          <a href="{{url_for('generate')}}" id="btn" class="btn btn-secondary">Generate Password</a>
+        </div>
+    </div>
+    <div class="card" id="card2">
+        <div class="card-header">
+          Manage Stored Passwords
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Manage stored passwords by searching for the specific application
+          </p>
+          <a href="{{url_for('manage')}}" id="btn" class="btn btn-secondary">Manage Passwords</a>
+        </div>
+    </div>
+    <style>
+        .card{
+            text-align: center;
+            margin: auto;
+            width: 30%;
+            padding: 10px;
+        }
+        #card2{
+            margin-top: 5%;
+        }p{
+            margin-top: 2%;
+            margin-left: 2%;
+            text-align: left;
+            font-size: small;
+        }input, label{
+            margin-top: 7.5px;
+        }
+    </style> 
+    {% endblock %}

@@ -1,0 +1,33 @@
+    {% extends "userbase.html" %}
+    {% block header %}{% endblock %}
+    {% block content %}
+
+    <form action="{{url_for('userhome')}}" class="backbtn" method="POST">
+        <button type="submit" class="btn btn-light">Back</button>
+    </form>
+
+    <p>Please enter the name of the website/application you would like to search: </p>
+    <form action="{{url_for('results')}}" class="sbar" method="POST">
+        <input type="text" class="form-control" id="formGroupExampleInput" name="site" placeholder="Eg. Linkedin">
+
+        <input type="submit" class="bttn" value="Search">
+    </form>
+    <style>
+        p{
+            text-align: center;
+            font-size: large;
+        }input, label{
+            margin-top: 7.5px;
+        }.sbar{
+            text-align: center;
+            margin: auto;
+            width: 30%;
+            padding: 10px;
+        }.bttn{
+            margin-top: 5%;
+        }.backbtn{
+            margin-top: 2%;
+            margin-left: 3%;
+        }
+    </style>
+    {% endblock %}
