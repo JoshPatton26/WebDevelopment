@@ -30,7 +30,7 @@ Welcome to the E-Commerce Website project! This project is an advanced web devel
 2. Navigate to the project directory: `cd e-commerce-website`
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run the application: `python app.py`
-5. Access the website in your browser at: `http://localhost:5000`
+5. Access the website in your browser at: `http://127.0.0.1:5000`
 
 ## Contributing
 
