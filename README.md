@@ -4,8 +4,8 @@ Welcome to my Web Development projects repository! This repository houses a coll
 
 ## Project Overview
 
-### E-Commerce Store
-The current project in this repository is an advanced web development final project—an e-commerce store for a fictional produce wholesale company. This project demonstrates proficiency in various web development technologies and frameworks, including HTML for markup, CSS for styling, Python for backend development, Flask for web application framework, and databases such as SQLite3 and SQLAlchemy for data storage and management.
+### Advanced Web Development Assignments
+This section contains assignments from my Advanced Web Development class at The University of Alabama at Birmingham (UAB). These assignments cover a range of topics including frontend and backend development, database integration, API usage, authentication, and more.
 
 ### E-Commerce Store Project
 The centerpiece of this repository is my advanced web development final project: an e-commerce store for a fictional produce wholesale company. This project demonstrates proficiency in frontend design, backend development with Flask, database management using SQLite3 and SQLAlchemy, user authentication, and more.
