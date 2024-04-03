@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #3A405A;
+}
+header{
+    background: #3A405A;
+    overflow: auto;    
+}
+header h1{
+    float: left;
+    width: 570px;
+    font-size: 50px;
+    font-family: Verdana;
+    color: #E9AFA3;
+}
+header nav{
+    float: right;
+    width: 285px;
+    color: #685044;
+    text-decoration: none;
+    list-style: none;
+}
+header nav a{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: Verdana;
+    color: #E9AFA3;
+}
+header nav a:hover{
+    color: beige;
+}
+main{
+    background: #AEC5EB;
+    overflow: auto;
+    color: #685044;
+}
+main .text{
+    float: left;
+    width: 570px;
+}
+main .image{
+    float: right;
+    width: 285px;
+}
+footer{
+    overflow: auto;
+    color: #AEC5EB;
+}
+footer .contact{
+    float: left;
+    width: 570px;
+    font-family: Verdana;
+}
+footer .sitemap{
+    float: right;
+    width: 285px;
+    font-family: Verdana;
+    color: #E9AFA3;   
+}
+footer .sitemap h5{
+    text-decoration: underline;
+}
+footer .sitemap a{
+    color: #AEC5EB;
+}
+footer .sitemap a:hover{
+    color: beige;
+}
+header, main, footer{
+    min-width: 855px;
+}
+header .container, main .container, footer .container{
+    max-width: 855px;
+    margin: auto;
+}

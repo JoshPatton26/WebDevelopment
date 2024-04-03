@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <p>Please fill out the form below to resister for a new account</p>
+    <form action="{{url_for('thankyou')}}" method = "POST">
+            <label for="fName">First Name: </label>
+            <input type="text" name="fName" placeholder="John"><br>
+            <label for="lName">Last Name: </label>
+            <input type="text" name="lName" placeholder="Doe"><br>
+            <label for="email">Email: </label>
+            <input type="text" name="email" placeholder="johndoe2@example.com"><br>
+            <label for="psw">Password: </label>
+            <input type="text" name="psw" placeholder="Password"><br>
+            <label for="conpsw">Confirm Password:</label>
+            <input type="text" name="conpsw" placeholder="Confirm Password"><br>
+            <input type="submit" value="Create Account">   
+    </form>
+    <style>
+        p{
+            margin-top: 100px;
+            text-align: center;
+            font-size: large;
+        }
+        form{
+            margin: 50px;
+            text-align: center;
+        }
+        input, label{
+            margin-top: 12px;
+        }
+    </style>
+    {% endblock %}
+</body>
+</html>

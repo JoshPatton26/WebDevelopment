@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Pages</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="title">
+        <center><h3>All Records:</h3></center>
+    </div>
+    <table border="1" >
+        <thead>
+            <td><b>Company Name:</b></td>
+            <td><b>Company Email:</b></td>
+            <td><b>Company Phone:</b></td>
+            <td><b>Company Address:</b></td>
+        </thead>
+
+        {% for row in rows %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <style type="text/css">
+        .msg{
+            margin-top: 60px;
+        }
+        .title{
+            margin-top: 5%;
+        }
+        table{
+            margin-top: 1%;
+            margin-left: 20%;
+            width: 60%;
+            text-align: center;
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+    {% endblock %}
+</body>
+</html>

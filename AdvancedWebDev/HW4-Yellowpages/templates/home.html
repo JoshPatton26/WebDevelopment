@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Pages</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="jumbotron">
+        <center><h2>Welcome to Josh Pages</h2></center>
+        <div class="buttons">
+            <form action="{{url_for('list')}}">
+                <button>Show All Records</button>
+            </form>
+        </div>
+        <div class="add">
+            <h3>Add Record:</h3>
+            <p>Fill out the form below to add a new record</p>
+            <form action="{{url_for('addrec')}}" method = "POST">
+                <label for="name">Company Name: </label>
+                <input type="text" name="name">
+                <label for="email">Company Email: </label>
+                <input type="text" name="email">
+                <label for="phone">Company Phone: </label>
+                <input type="text" name="phone">
+                <label for="address">Company Address: </label>
+                <input type="text" name="address">
+                <input type="submit" value="Submit Form">
+            </form>
+        </div>
+        <div class="modify">
+            <h3>Modify Record:</h3>
+            <p>Fill out the form below to modify a record<br>
+            <span id="instruction"> Search by company name, this field cannot change.</span></p>
+                <form action="{{url_for('modify')}}" method = "POST">
+                <label for="name">Company Name: </label>
+                <input type="text" name="name">
+                <label for="email">Company Email: </label>
+                <input type="text" name="email">
+                <label for="phone">Company Phone: </label>
+                <input type="text" name="phone">
+                <label for="address">Company Address: </label>
+                <input type="text" name="address">
+                <input type="submit" value="Submit Form">
+            </form>
+        </div>
+        <div class="delete">
+            <h3>Delete Record:</h3>
+            <p>Give the phone number of the company you would like to remove</p>
+            <form action="{{url_for('delete')}}" method = "POST">
+                <label for="cphone">Company Phone: </label>
+                <input type="text" name="phone">
+                <input type="submit" value="Submit Form">
+            </form>
+        </div>
+    </div>
+    <style type="text/css">
+        button{
+            width: 100%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        .add{
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        .modify{
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        .delete{
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        #instruction{
+            font-size: medium;
+        }
+    </style>
+
+    {% endblock %}
+</body>
+</html>

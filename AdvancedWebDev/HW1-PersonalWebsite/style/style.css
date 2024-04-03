@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+label.logo{
+    color: brown;
+    font-size: 35px;
+    line-height: 80px;
+    padding-left: 20px;
+}
+#navbar{
+    background: beige;
+    height: 80px;
+    width: 100%;
+}
+#navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+#navbar li{
+    display: inline-block; 
+    line-height: 80px;
+    margin: 0 5px;
+}
+#navbar a{
+    color: brown;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+#navbar a:hover{
+    color: lightsalmon;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#maintext p{
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 1000px;
+}
+#faceshot{
+    margin-top: 20px;
+    margin-left: 717.4px;
+}
+#resume{
+    margin-top: 20px;
+    margin-left: 514.5px;
+}
+#imgtable{
+    margin-top: 20px;
+    margin-left: 355.3px;
+}
+#portfoliotext p{
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 1000px;
+}
+#contacttext p{
+    margin-top: 20px;
+    margin-left: 250px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 1000px;
+}
+#contactlist{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+#contactlist li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+#contactlist a{
+    font-size: 17px;
+    text-decoration: underline;
+}
+#contactlist a:hover{
+    color: lightsalmon;
+}
+footer{
+    overflow: auto;
+    background-color: beige;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer .contact{
+    float: left;
+    width: 570px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    padding-left: 20px;
+}
+footer .sitemap{
+    float: right;
+    width: 285px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;   
+}
+footer .sitemap h5{
+    text-decoration: underline;
+}
+footer .sitemap a{
+    color: brown;
+    text-transform: uppercase;
+}
+footer .sitemap a:hover{
+    color: lightsalmon;
+}

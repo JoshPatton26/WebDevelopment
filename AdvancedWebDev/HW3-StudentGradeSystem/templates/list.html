@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades System</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    <table border="1" >
+        <thead>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Final Grade</td>
+            <td>Student ID #</td>
+        </thead>
+
+        {% for row in rows %}
+            <tr>
+                <td>{{row["firstName"]}}</td>
+                <td>{{row["lastName"]}}</td>
+                <td>{{row["grade"]}}</td>
+                <td>{{row["id"]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <style type="text/css">
+        table{
+            margin: 100px;
+            width: 600px;
+            text-align: center;
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+    {% endblock %}
+</body>
+</html>

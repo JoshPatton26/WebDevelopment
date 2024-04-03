@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades System</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="jumbotron">
+        <p>Welcome to Student Grading System</p>
+        <p>Fill out the form below to add a new student</p>
+        <form action="{{url_for('addrec')}}" method = "POST">
+            <label for="first">First Name: </label>
+            <input type="text" name="first">
+            <label for="last">Last Name: </label>
+            <input type="text" name="last">
+            <label for="grade">Final Grade: </label>
+            <input type="number" name="finalgrade">
+            <input type="submit" value="Submit Form">
+        </form>
+        <div class="buttons">
+            <form action="{{url_for('list')}}">
+                <button id="all">All Students</button>
+                <button onclick="myFunction1()">Passing Students</button>
+                <script>
+                    function myFunction1(){
+                        var failing = document.getElementById("grade");
+                        if(failing < 85){
+                            db.run("DELETE FROM students WHERE grade =?", failing, error =>{
+                            if(error) return console.log(err.message);
+                            console.log('${failing} deleted successfully');
+                            });
+                        }
+                    }
+                </script>
+            </form>
+        </div>
+        <div class="id">
+            <form action="{{url_for('list')}}">
+                <input type="text" name="idNum" placeholder="Student ID #">
+                <button onclick="myFunction2()">Delete</button>
+                <script>
+                    function myFunction2(){
+                        var SID = document.getElementById("idNum");
+                        db.run("DELETE FROM students WHERE id =?", SID, error =>{
+                            if(error) return console.log(err.message);
+                            console.log('${SID} deleted successfully');
+                        });
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .buttons, .id{
+            padding-top: 7px;
+            padding-bottom: 5px;
+        }
+    </style>
+
+    {% endblock %}
+</body>
+</html>
