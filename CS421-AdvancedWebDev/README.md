@@ -5,7 +5,7 @@ Welcome to the Advanced Web Development projects folder! This directory contains
 ## Project Overview
 
 ### Simple Personal Website
-A basic personal website showcasing information about yourself, your interests, and your skills. This project serves as an introduction to web development and HTML/CSS.
+A basic personal website showcasing information about myself, my interests, and my skills. This project serves as an introduction to web development and HTML/CSS.
 
 ### Website Clone
 A project involving the cloning of a fake website to understand its design and structure. This exercise helps in learning about website layout, styling, and responsiveness.
