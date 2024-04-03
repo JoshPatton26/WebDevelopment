@@ -14,7 +14,6 @@ The current project in this repository is an advanced web development final proj
 - **Python:** Utilized for backend development, including server-side scripting and business logic implementation.
 - **Flask Framework:** Employed for building web applications and APIs with Python.
 - **Databases:** Leveraged SQLite3 and SQLAlchemy for database management, querying, and data manipulation.
-- **Other Technologies:** Additional technologies may be used depending on the project requirements.
 
 ## Running the Projects
 
